@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+ <script>
+ var list="";
+for (var a=1;a<=100;a++)
+{
+        list="";
+    if(a%3 ==0)
+    {
+        list="fizz";
+    }
+    if (a%5 ==0)
+    {
+        list="buzz";
+    }
+    if ((a%3==0)&&(a%5==0)) {
+        list="fizzbuzz";
+    }
+
+    $("body").append("<div>"+ a+list + "</div>");
+    list=""; 
+}
+
+</script>
+
+
+</body>
+</html>
